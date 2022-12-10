@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Steps to get the application up and running.
 
-Things you may want to cover:
+**Step: 1**
 
-* Ruby version
+Add some orders
+* rake db:seed:create_pizzas
 
-* System dependencies
+**Step : 2**
 
-* Configuration
+* rails s
+* http://127.0.0.1:3000/order/list
 
-* Database creation
+**Step : 3**
+* Complete order by clicking Complete button
 
-* Database initialization
 
-* How to run the test suite
+**Step : 4 [ Optional]**
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To set all orders to open again
+* http://127.0.0.1:3000/order/open_all
