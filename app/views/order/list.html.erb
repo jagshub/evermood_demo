@@ -1,0 +1,13 @@
+<% if @orders.blank? %>
+<p>There are not any orders currently in the system.</p>
+<% else %>
+<p>These are the current orders in our system</p>
+  
+<ul id = "orders">
+    <% @orders.each do |o| %>
+    <li><%= o.id -%></li>
+    <%= render "complete", order: o %>
+    <% end %>
+</ul>
+
+<% end %>
