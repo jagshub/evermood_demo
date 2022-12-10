@@ -19,10 +19,13 @@
       </div>
       <div>
         <br>
+        <h6>Total Price: <%= "%.2f" % o.total_price %>€</h6>
+      </div>
+      <div>
+        <br>
         <%= render "complete", order: o %>
       </div>
     </div>
     <% end %>
 </ul>
-
 <% end %>

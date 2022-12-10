@@ -18,5 +18,6 @@ module Pizzas
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.pricing = config_for(:price_config)
   end
 end

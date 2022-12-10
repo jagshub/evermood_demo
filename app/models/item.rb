@@ -13,4 +13,12 @@
 class Item < ApplicationRecord
   belongs_to :order
   belongs_to :pizza
+
+  def extras_cost
+    cost = 0
+    self.ingredients_extra.split(",").each do |extra|
+      cost += (Rails.configuration.pricing.ingredients[extra.to_sym].to_f * Rails.configuration.pricing.size_multipliers[self.pizza.size.to_sym].to_f)
+    end
+    cost
+  end
 end
