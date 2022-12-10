@@ -13,7 +13,7 @@ class Order < ApplicationRecord
   has_many :items, dependent: :destroy
   has_many :pizzas, through: :items,  dependent: :destroy
 
-  enum state: { open: 0, completed: 1 }
+  enum state: { OPEN: 0, COMPLETED: 1 }
 
   validates_presence_of :items
 
