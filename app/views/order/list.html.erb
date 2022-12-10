@@ -1,12 +1,27 @@
 <% if @orders.blank? %>
 <p>There are not any orders currently in the system.</p>
 <% else %>
-<p>These are the current orders in our system</p>
-  
 <ul id = "orders">
+  <h2>Orders</h2>
     <% @orders.each do |o| %>
-    <li><%= o.id -%></li>
-    <%= render "complete", order: o %>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h6>ID: <%= o.id -%></h6>
+          <h6>Created: <%= o.created_at -%></h6>
+          <h6>Promotion Codes: <%= o.promotion_codes.blank? ? "-" : o.promotion_codes -%></h6>
+          <h6>Discount Codes: <%= o.discount_code.blank? ? "-" : o.discount_code -%></h6>
+        </div>
+        <div class="col">
+          <%= render "items", order: o %>
+        </div>
+      </div>
+      <div>
+        <br>
+        <%= render "complete", order: o %>
+      </div>
+    </div>
     <% end %>
 </ul>
 

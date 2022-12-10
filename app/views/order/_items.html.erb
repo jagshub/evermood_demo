@@ -1,0 +1,18 @@
+  <div class="container">
+    <h6>Items</h6>
+    <% order.items.each do |item| %>
+    <ul>
+      <li><%= item.pizza.name %> (<%= item.pizza.size%>)</li>
+      <% unless  item.ingredients_extra.blank? %>
+        <ul>
+          <li>Add: <%= item.ingredients_extra %> </li>
+        </ul>
+       <% end %>
+      <% unless  item.ingredients_omit.blank? %>
+        <ul>
+          <li>Add: <%= item.ingredients_omit %> </li>
+        </ul>
+      <% end %>
+    </ul>
+    <% end %>
+  </div>

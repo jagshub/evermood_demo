@@ -102,6 +102,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, RVM: ruby-2.7.5 [evermood]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, RVM: ruby-2.7.5 [evermood]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.7.1, RVM: ruby-2.7.5 [evermood]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shoulda-matchers (v5.2.0, RVM: ruby-2.7.5 [evermood]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v4.1.0, RVM: ruby-2.7.5 [evermood]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.1.1, RVM: ruby-2.7.5 [evermood]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, RVM: ruby-2.7.5 [evermood]) [gem]" level="application" />
